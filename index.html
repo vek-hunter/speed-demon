@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speed Calculator</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+  <main class="calculator">
+    <p class="eyebrow">A SIMPLE PHYSICS PROJECT</p>
+    <h1>Speed Calculator</h1>
+    <p class="intro">Estimate how fast an object is moving after falling through the air.</p>
+
+    <form id="speed-form">
+      <label for="altitude">Starting altitude <span>(m)</span></label>
+      <input id="altitude" name="altitude" type="number" min="1" step="1" value="100" required>
+
+      <label for="starting-speed">Starting speed <span>(m/s)</span></label>
+      <input id="starting-speed" name="startingSpeed" type="number" min="0" step="0.1" value="0" required>
+
+      <label for="mass">Mass <span>(kg)</span></label>
+      <input id="mass" name="mass" type="number" min="0.1" step="0.1" value="80" required>
+
+      <label for="area">Frontal area <span>(m²)</span></label>
+      <input id="area" name="area" type="number" min="0.01" step="0.01" value="0.7" required>
+
+      <button type="submit">Calculate speed</button>
+    </form>
+
+    <section class="result" aria-live="polite">
+      <p>ESTIMATED FINAL SPEED</p>
+      <strong id="result">—</strong> <span>m/s</span>
+    </section>
+    <p class="note">This is a simple estimate using gravity and air resistance.</p>
+  </main>
+</body>
+</html>
