@@ -8,23 +8,23 @@ body {
   display: grid;
   place-items: center;
   padding: 24px;
-  background: #edf1e8;
-  color: #26332a;
+  background: #ffffff;
+  color: #111111;
   font-family: Arial, sans-serif;
 }
 
 .calculator {
   width: min(100%, 460px);
   padding: 36px;
-  border: 1px solid #e4e9df;
-  border-radius: 12px;
-  background: #fff;
-  box-shadow: 0 12px 36px #26332a12;
+  border: 1px solid #111111;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
 }
 
 .eyebrow,
 .result p {
-  color: #638148;
+  color: #111111;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 1.4px;
@@ -33,11 +33,12 @@ body {
 h1 {
   margin: 12px 0 8px;
   font-size: 34px;
+  color: #111111;
 }
 
 .intro,
 .note {
-  color: #737c73;
+  color: #111111;
   font-size: 14px;
   line-height: 1.6;
 }
@@ -51,26 +52,27 @@ form {
 
 label {
   align-self: end;
-  color: #455147;
+  color: #111111;
   font-size: 13px;
 }
 
 label span {
-  color: #828a82;
+  color: #111111;
 }
 
 input {
   width: 100%;
   height: 42px;
   padding: 0 11px;
-  border: 1px solid #dfe5dc;
-  border-radius: 5px;
-  color: #26332a;
+  border: 1px solid #111111;
+  border-radius: 0;
+  background: #ffffff;
+  color: #111111;
   font-size: 15px;
 }
 
 input:focus {
-  outline: 2px solid #9bc478;
+  outline: 1px solid #111111;
   outline-offset: 1px;
 }
 
@@ -78,24 +80,25 @@ button {
   grid-column: 1 / -1;
   height: 46px;
   margin-top: 8px;
-  border: 0;
-  border-radius: 5px;
-  background: #2c4031;
-  color: #fff;
+  border: 1px solid #111111;
+  border-radius: 0;
+  background: transparent;
+  color: #111111;
   font-size: 14px;
   font-weight: 700;
   cursor: pointer;
 }
 
 button:hover {
-  background: #426044;
+  background: #f2f2f2;
 }
 
 .result {
   margin-top: 22px;
   padding: 15px;
-  border-radius: 6px;
-  background: #f3f6ef;
+  border: 1px solid #111111;
+  border-radius: 0;
+  background: transparent;
 }
 
 .result p {
@@ -105,10 +108,11 @@ button:hover {
 
 .result strong {
   font-size: 34px;
+  color: #111111;
 }
 
 .result > span {
-  color: #737c73;
+  color: #111111;
 }
 
 .note {
